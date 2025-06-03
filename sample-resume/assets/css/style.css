@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    position: relative;
+}
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(31, 31, 31, 0.85);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 300px;
+}
+.profile-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.3;
+}
+.profile-content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.profile-image {
+    width: 140px;
+    height: 140px;
+    border-radius: 10%;
+    border: 3px solid #00bcd4;
+    object-fit: cover;
+    margin-bottom: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.profile-name {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.profile-title {
+    color: #a4ff91;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+.profile-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+.profile-social a {
+    color: #bbbbbb;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+.profile-social a:hover {
+    color: #00bcd4;
+    transform: scale(1.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 20px;
+}
+h1 {
+    color: #ffffff;
+    font-size: 2.2rem;
+}
+h2 {
+    color: #00bcd4;
+    margin: 20px 0 10px;
+    font-size: 1.5rem;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+.contact-info a {
+    color: #bbbbbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.contact-info a:hover {
+    color: #00bcd4;
+}
+.section {
+    margin-bottom: 25px;
+}
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.skill-tag {
+    background: #004d40;
+    color: #a7ffeb;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #999;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+.footer a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.canvas canvas {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+    .profile-section {
+        height: 280px;
+    }
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    .profile-name {
+        font-size: 1.8rem;
+    }
+    .profile-social a {
+        font-size: 1.3rem;
+        width: 36px;
+        height: 36px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-section {
+        height: 250px;
+    }
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+    .profile-name {
+        font-size: 1.6rem;
+    }
+    .profile-title {
+        font-size: 1.1rem;
+    }
+    .profile-social {
+        gap: 10px;
+    }
+    .profile-social a {
+        font-size: 1.2rem;
+        width: 32px;
+        height: 32px;
+    }
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+}
